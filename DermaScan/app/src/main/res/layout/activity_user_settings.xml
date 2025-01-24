@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/laranja_claro_derma"
+    tools:context=".User.UserSettings">
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="550dp"
+        android:background="@color/salmao_derma"
+        android:onClick="LogOff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sair da Conta"
+            android:textColor="@color/laranja_derma"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/salmao_derma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Email:"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Email_update_id"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_light"
+            android:inputType="text|textEmailAddress"
+            android:textColor="@color/roxo_derma" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/salmao_derma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Senha:"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Password_update_id"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:backgroundTint="#00FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:inputType="text|textEmailAddress"
+            android:textAlignment="viewStart"
+            android:textColor="@color/roxo_derma"
+            android:textColorHint="@color/roxo_derma" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/circule_icon"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="141dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_user_image_id"
+            android:layout_width="221dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginBottom="10dp"
+            app:civ_border_color="#00FFFFFF"
+            app:civ_border_overlay="false"
+            app:civ_border_width="2dp"
+            tools:src="@drawable/iconuser" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="clip_horizontal|center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/circule_icon"
+            android:onClick="setIconUser"
+            app:srcCompat="@drawable/pen" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="404dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Button_save_update"
+            android:layout_width="166dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/roxo_derma"
+            android:fontFamily="@font/poppins_bold"
+            android:onClick="setInformationsUser"
+            android:text="Salvar"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/result_insert_icon_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_icon_user"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:indeterminateTint="@color/roxo_derma"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="410dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="250dp"
+        android:background="@color/salmao_derma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Name_update_id"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:backgroundTint="#00FF0000"
+            android:ems="10"
+            android:fontFamily="@font/poppins_light"
+            android:inputType="text"
+            android:textColor="@color/roxo_derma"
+            android:textColorHint="@color/roxo_derma" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nome:"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="431dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_options_retangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/userImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="20dp"
+            android:onClick="toUserArea"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/iconuser" />
+
+        <ImageView
+            android:id="@+id/takePhotoImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="takeImageAnalysis"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/plus_photo" />
+
+        <ImageView
+            android:id="@+id/uploadImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-6dp"
+            android:onClick="uploadAnalysis"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/upload_cloud" />
+
+        <ImageView
+            android:id="@+id/homeImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:onClick="toHome"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/casa" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2D1B0"
+    app:layout_anchorGravity="center|center_vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="220dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nameApp"
+            android:layout_width="122dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left"
+            android:fontFamily="@font/poppins_bold"
+            android:text="DERMA"
+            android:textColor="#230B41"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nameApp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:fontFamily="@font/poppins_bold"
+            android:text="SCAN"
+            android:textColor="#913C12"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descApp"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:fontFamily="@font/poppins_light"
+            android:text="IA PARA O CUIDADO DA SUA PELE "
+            android:textColor="#230B41"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="363dp"
+        android:layout_height="451dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="522dp"
+            android:layout_height="719dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnStart_id"
+            android:layout_width="198dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:onClick="nextPage"
+            android:text="COMEÇAR"
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

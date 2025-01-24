@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="412dp"
+    android:layout_height="258dp">
+
+    <FrameLayout
+        android:id="@+id/frame_id"
+        android:layout_width="412dp"
+        android:layout_height="218dp"
+        android:background="@color/salmao_derma"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <FrameLayout
+            android:id="@+id/frame_photo_id"
+            android:layout_width="183dp"
+            android:layout_height="127dp"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/circule_icon">
+
+            <ImageView
+                android:id="@+id/image_record_id"
+                android:layout_width="200dp"
+                android:layout_height="127dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circule_icon"
+                app:srcCompat="@drawable/circule_editable_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/label_date_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Data:"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/label_percentage_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Percentual:"
+            android:textColor="@color/roxo_derma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/value_date_id"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="125dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/value_percentage_id"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/roxo_derma"
+            android:textSize="18sp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

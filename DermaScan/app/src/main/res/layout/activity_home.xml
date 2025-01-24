@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/laranja_claro_derma"
+    tools:context=".Application.Home">
+
+    <FrameLayout
+        android:id="@+id/info_cancer_id"
+        android:layout_width="356dp"
+        android:layout_height="196dp"
+        android:layout_marginBottom="470dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="informationCancer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="215dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/iconinfo" />
+
+        <TextView
+            android:id="@+id/info_text_cancer_id"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Câncer de pele"
+            android:textColor="@color/laranja_derma"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/info_whatCancer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="100dp"
+            android:text="O que é? Como prevenir?"
+            android:textColor="@color/amarelo_claro_derma"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/upload_images_id"
+        android:layout_width="354dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="uploadAnalysis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/upload_cloudmax" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Faça upload da imagem de sua mancha e descubra a probabilidade de malignidade "
+            android:textColor="@color/laranja_derma"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/take_photo_id"
+        android:layout_width="356dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="takeImageAnalysis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="116dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/plus_photomax" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Tire foto de sua mancha e descubra a probabilidade de malignidade "
+            android:textColor="@color/laranja_derma"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="431dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_options_retangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/homeImage_button_id"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/casa" />
+
+        <ImageView
+            android:id="@+id/uploadImage_button_id"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-6dp"
+            android:onClick="uploadAnalysis"
+            app:srcCompat="@drawable/upload_cloud" />
+
+        <ImageView
+            android:id="@+id/takePhotoImage_button_id"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="takeImageAnalysis"
+            app:srcCompat="@drawable/plus_photo" />
+
+        <ImageView
+            android:id="@+id/userImage_button_id"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="20dp"
+            android:onClick="toUserArea"
+            app:srcCompat="@drawable/iconuser" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="419dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Registre suas fotos"
+            android:textColor="@color/laranja_derma"
+            android:textSize="34sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/hellowUser_id"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Informe-se"
+            android:textColor="@color/laranja_derma"
+            android:textSize="34sp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

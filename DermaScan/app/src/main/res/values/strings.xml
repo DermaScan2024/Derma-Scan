@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DermaScan</string>
+    <string name="melanoma_title">Melanoma</string>
+    <string name="melanoma_information">O melanoma é o tipo mais agressivo de câncer de pele, originado nos melanócitos, células responsáveis pela produção de melanina. Ele pode aparecer como uma pinta ou mancha escura que muda de forma, tamanho ou cor. Embora seja menos comum, o melanoma tem alto potencial de metástase, sendo crucial detectá-lo precocemente.
+    </string>
+    <string name="melanoma_prevention">Evitar exposição excessiva ao sol: Use protetor solar com FPS 30 ou superior diariamente, mesmo em dias nublados.
+        Cobrir a pele: Use chapéus de aba larga, óculos de sol com proteção UV e roupas que cubram o máximo possível do corpo.
+        Autoexame da pele: Verifique regularmente pintas e manchas usando o método ABCDE (Assimetria, Bordas irregulares, Cor variada, Diâmetro maior que 6 mm, Evolução).
+        Consulta dermatológica regular: Faça check-ups anuais ou conforme orientação médica.
+    </string>
+
+    <string name="espino_title">
+        Carcinoma Espinocelular
+    </string>
+
+    <string name="espino_information">
+        O carcinoma espinocelular é o segundo tipo mais comum de câncer de pele, originado nas células escamosas da epiderme. Ele pode aparecer como lesões ásperas, avermelhadas, com crostas ou que sangram. Esse tipo tem um risco maior de se espalhar para outras partes do corpo se não tratado.
+    </string>
+
+    <string name="espino_prevention">
+        Evitar exposição solar prolongada: Use protetor solar diariamente, incluindo em áreas menos óbvias como orelhas, couro cabeludo e dorso das mãos.
+        Uso de roupas protetoras: Opte por tecidos com proteção UV e chapéus que cubram o rosto e pescoço.
+        Evitar lesões crônicas: Não ignore feridas que não cicatrizam, pois elas podem evoluir para carcinoma espinocelular.
+        Exames regulares: Realize consultas dermatológicas para detecção precoce de lesões suspeitas.
+    </string>
+
+    <string name="baso_title">
+        Carcinoma Basocelular
+    </string>
+
+    <string name="baso_information">
+        O carcinoma basocelular é o tipo mais comum de câncer de pele, originado nas células basais da epiderme. Ele cresce lentamente e raramente se espalha para outros órgãos. Manifesta-se geralmente como nódulos, manchas brilhantes ou feridas que não cicatrizam.
+    </string>
+
+    <string name="baso_prevention">
+        Proteger-se do sol: Use protetor solar diariamente e evite se expor ao sol entre 10h e 16h.
+        Evitar câmaras de bronzeamento: A radiação UV artificial é um fator de risco conhecido.
+        Observar mudanças na pele: Preste atenção em áreas frequentemente expostas ao sol, como rosto, pescoço e braços.
+        Manter a pele hidratada: Pele saudável e hidratada é mais resistente a danos solares.
+    </string>
+</resources>

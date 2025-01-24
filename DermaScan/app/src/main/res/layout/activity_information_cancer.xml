@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/melanomaPhoto_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/salmao_derma">
+
+    <FrameLayout
+        android:id="@+id/carc_espino_id"
+        android:layout_width="373dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="ShowInformationEspino"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/carc_espino_Text_id"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Carcinoma Espinocelular"
+            android:textColor="@color/laranja_derma"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/carc_espino_Image"
+            android:layout_width="102dp"
+            android:layout_height="81dp"
+            app:srcCompat="@drawable/carcinomaespinocelular" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/carc_baso_id"
+        android:layout_width="373dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="ShowInformationBaso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/carc_baso_Text_id"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Carcinoma Basocelular"
+            android:textColor="@color/laranja_derma"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/carc_baso_Image"
+            android:layout_width="102dp"
+            android:layout_height="81dp"
+            app:srcCompat="@drawable/carcinomabasocelular" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="423dp"
+        android:layout_height="402dp"
+        android:layout_marginBottom="510dp"
+        android:background="@color/laranja_claro_derma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="258dp"
+            android:layout_height="466dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="-12dp"
+            app:srcCompat="@drawable/cancerperson" />
+
+        <TextView
+            android:id="@+id/informationOfCancer_id"
+            android:layout_width="162dp"
+            android:layout_height="306dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Câncer\n de \n Pele"
+            android:textAlignment="textEnd"
+            android:textColor="@color/laranja_derma"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/texteAboutInfos_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Tudo que você\n precisa saber para\n se prevenir e\n  identificar"
+            android:textAlignment="textEnd"
+            android:textColor="@color/laranja_derma"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="431dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_options_retangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/homeImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:onClick="toHome"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/casa" />
+
+        <ImageView
+            android:id="@+id/uploadImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-6dp"
+            android:onClick="uploadAnalysis"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/upload_cloud" />
+
+        <ImageView
+            android:id="@+id/takePhotoImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="takeImageAnalysis"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/plus_photo" />
+
+        <ImageView
+            android:id="@+id/userImage_Info_button_id"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="20dp"
+            android:onClick="toUserArea"
+            android:tint="@color/laranja_derma"
+            app:srcCompat="@drawable/iconuser" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/melanoma_id"
+        android:layout_width="373dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/buttons_options"
+        android:onClick="ShowInformationMela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/melanomaText_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="70dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Melanoma"
+            android:textColor="@color/laranja_derma"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="102dp"
+            android:layout_height="81dp"
+            app:srcCompat="@drawable/melanomaphoto" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="388dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/typesofcancer_id"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tipos de Câncer de Pele "
+            android:textColor="@color/laranja_derma"
+            android:textSize="30dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

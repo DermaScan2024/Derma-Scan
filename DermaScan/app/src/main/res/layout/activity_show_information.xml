@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/laranja_claro_derma"
+    tools:context=".Application.BaseInformationCancer.ShowInformation">
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/title_InformationCancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/melanoma_title"
+            android:textAlignment="center"
+            android:textColor="@color/roxo_derma"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/melanoma_information"
+            android:textAlignment="center"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Title_Prevention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="420dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Métodos de Prevenção"
+            android:textColor="@color/roxo_derma"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/information_Prevention"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="480dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Evitar exposição excessiva ao sol: Use protetor solar com FPS 30 ou superior diariamente, mesmo em dias nublados.
+Cobrir a pele: Use chapéus de aba larga, óculos de sol com proteção UV e roupas que cubram o máximo possível do corpo.
+Autoexame da pele: Verifique regularmente pintas e manchas usando o método ABCDE (Assimetria, Bordas irregulares, Cor variada, Diâmetro maior que 6 mm, Evolução).
+Consulta dermatológica regular: Faça check-ups anuais ou conforme orientação médica."
+            android:textAlignment="center"
+            android:textColor="@color/roxo_derma"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

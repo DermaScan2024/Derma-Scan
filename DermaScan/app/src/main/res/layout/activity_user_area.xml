@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/laranja_claro_derma"
+    tools:context=".User.UserArea">
+
+    <FrameLayout
+        android:layout_width="431dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_options_retangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/homeImage_user_area_button_id"
+            android:layout_width="92dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:onClick="toHome"
+            app:srcCompat="@drawable/casa" />
+
+        <ImageView
+            android:id="@+id/uploadImage_user_area_button_id"
+            android:layout_width="92dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-6dp"
+            android:onClick="uploadAnalysis"
+            app:srcCompat="@drawable/upload_cloud" />
+
+        <ImageView
+            android:id="@+id/takePhotoImage_user_area_button_id"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="takeImageAnalysis"
+            app:srcCompat="@drawable/plus_photo" />
+
+        <ImageView
+            android:id="@+id/userImage_user_area_button_id"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-3dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/iconuser" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/circule_icon"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="141dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="411dp"
+        android:layout_height="171dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_user_area_id"
+            android:layout_width="109dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center|start|center_horizontal|center_vertical"
+            android:layout_marginBottom="20dp"
+            app:civ_border_color="#00FFFFFF"
+            app:civ_border_overlay="false"
+            app:civ_border_width="2dp"
+            tools:src="@drawable/iconuser" />
+
+        <TextView
+            android:id="@+id/name_user_area_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start|top"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nome"
+            android:textColor="@color/roxo_derma"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email_user_area_id"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start|top"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="70dp"
+            android:text="E-mail"
+            android:textAlignment="viewStart"
+            android:textColor="@color/roxo_derma"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="415dp"
+        android:layout_height="353dp"
+        android:background="@drawable/button_options_retangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start|top"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sua área"
+            android:textColor="#3b1b0d"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/button_records_user_area_id"
+            android:layout_width="129dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="40dp"
+            android:background="@color/roxo_derma"
+            android:onClick="goUserRecords">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:tint="#FFFFFF"
+                app:srcCompat="@drawable/menu" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:tint="#FFFFFF"
+                app:srcCompat="@drawable/menu" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/button_settings_user_area_id"
+            android:layout_width="129dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="40dp"
+            android:background="@color/roxo_derma"
+            android:onClick="goUserSettings">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="102dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:tint="#FFFFFF"
+                app:srcCompat="@drawable/setting" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Registros"
+            android:textColor="#3b1b0d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Configurações"
+            android:textColor="#3b1b0d"
+            android:textSize="20sp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

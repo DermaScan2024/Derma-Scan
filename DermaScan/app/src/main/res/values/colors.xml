@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="roxo_derma">#230b41</color>
+    <color name="laranja_derma">#913c12</color>
+    <color name="laranja_claro_derma">#e2d1b0</color>
+    <color name="amarelo_claro_derma">#e69e42</color>
+    <color name="salmao_derma">#eddacf</color>
+</resources>
